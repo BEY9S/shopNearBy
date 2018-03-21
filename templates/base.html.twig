@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+    	<!-- meta tags -->
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{% block title %}ShopsNearBy | Welcome! Closet shops arround you{% endblock %}</title>
+        
+        <!-- CSS -->
+        {% block stylesheets %}
+
+        	<link rel="stylesheet" type="text/css" href="build/css/app.css">
+
+        {% endblock %}
     </head>
     <body>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        
+        <!-- JavaScript -->
+        {% block javascripts %}
+
+        	<script type="text/javascript" src="build/js/app.js"></script>
+
+        {% endblock %}
     </body>
 </html>
